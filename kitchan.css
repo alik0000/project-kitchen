@@ -1,0 +1,537 @@
+body{
+  padding: 0 0;
+  margin: 0 0;
+  width: 100vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+  width: 100%;
+  padding:20px 100px;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.scrolling {
+  color: black;
+   opacity: 0.8;
+   background-color: rgba(131, 2, 143, 0.555);
+}
+header .sticky{
+  background-color: rosybrown;
+}
+header .logo{
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+header .logo:hover{
+  color: rgb(255, 0, 85);
+  transition: all 0.3s ease;
+}
+span{
+  color: red;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header .navigation{
+  width: 520px;
+  display: flex;
+  align-items: center;
+  margin-left: 500px;
+  justify-content: space-between;
+
+}
+header .navigation li{
+  list-style: none;  
+}
+header .navigation li:first-child{
+  margin-left: 0;
+}
+header .navigation li a{
+  color: rgb(233, 232, 232);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+header .navigation li a:hover{
+  color: rgb(253, 1, 1);
+  transition: all 0.2s ease;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.Scrol-Down {
+  position: fixed;
+  display: flex;;
+  justify-content: center;
+  text-align: center;
+  right: 2rem;
+  margin: 0px;
+  bottom: 5rem;
+  z-index: 1;
+  font-size: 20px;
+  text-decoration: none;
+  background:rgba(200, 4, 218, 0.555);
+  border-radius: 40%;
+  opacity: 0.3;
+  visibility: hidden;
+}
+.ScrolDown i{
+  background:rgba(200, 4, 218, 0.555);
+  color: white;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.ScrolDown {
+  visibility: visible;  
+  bottom: 3rem;
+  transition: all 0.5s linear;
+  opacity: 1;
+}
+
+.ScrolDown :hover {
+    box-shadow: 0px 0px 10px 10px rgba(139, 11, 71, 0.616),
+    inset 0px 0px 10px 2px black;
+    color: black;  
+    transition: .5s; 
+}
+
+
+.banner {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+.banner .content h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+.banner .content p {
+  color: rgb(202, 200, 200);
+  font-size: 14px;
+  font-weight: 300px;
+  line-height: 20px;
+  margin: 10px 0px;
+}
+
+.banner .content button {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  background: rgb(221, 16, 78);
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.banner .content button:hover {
+  letter-spacing: 5px;
+}
+
+/*********Section-ABOUT***********/
+
+#about{
+  padding: 100px;
+}
+.about-us{
+  display: flex;
+  justify-content: space-between;
+}
+.aboutText h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+.aboutText p{
+  font-size: 16px;
+  text-align: justify;
+  margin-right: 20px;
+  color: rgb(61, 60, 60);
+  text-indent: 25px;
+  line-height: 20px;
+}
+
+
+/*********Section-MENU***********/
+main{
+  position: relative;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  width: 100%;
+}
+#menu{
+  padding: 100px;
+  position: relative;
+}
+
+.ourMenu{
+  position: relative;
+}
+
+.MenuText {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.MenuText h1{
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.MenuText p{
+  font-size: 16px;
+  color: rgb(61, 60, 60);
+  margin-top: 10px;
+}
+
+.MenuImages{
+  position: relative;
+  display: inline-block;
+}
+
+.definition{
+  position: relative;
+  box-shadow: 1px 1px 9px 9px rgb(224, 224, 224);
+  float: left;
+  margin: 18px;
+  padding: 8px;
+  outline: none;
+  text-align: center;
+}
+.definition h2{
+  font-weight: bold;
+  margin: 10px 0px 10px 0px;
+}
+
+.btn{
+  background:red;
+  font-size: 18px;
+  max-width: 140px;
+  height: 20px;
+  padding: 10px 20px;
+  margin: 30px auto;
+  text-align: center;
+  cursor: pointer;
+}
+.btn a{
+  text-decoration: none;
+  color: rgb(235, 230, 230);
+  letter-spacing: 2px;
+}
+.btn a:hover{
+  transition: all 0.2s ease;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+/*********Section-EXPERTS***********/
+
+#Expert{
+  position: relative;
+  padding: 100px;
+}
+.ExpertText{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ExpertText h1{
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.Experts{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.Experts .ExpertsPhoto img{
+  border-radius: 30px 30px 0px 0px;
+}
+.Experts .ExpertsPhoto h2{
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(87, 87, 87);
+  margin: 10px auto 20px auto;
+  text-align: center;
+}
+.Experts div{
+  box-shadow: 3px 3px 8px 8px rgb(95, 70, 6);
+  border-radius: 30px 30px 0px 0px;
+}
+
+/*********Section-Comment***********/
+#comment{
+  position: relative;
+  padding: 100px;
+  background-image: url(/images/bg2.jpg);
+  background-size: cover;
+}
+.CommentText{
+  text-align: center;
+  color: rgb(5, 5, 5);
+  margin-bottom: 60px;
+}
+.CommentText h1{
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.CommentText P{
+  font-size: 16px;
+  color: rgb(218, 216, 216);
+}
+.Clients{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.client{
+  background: white;
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+}
+.client img{
+  border-radius: 50%;
+}
+.client p{
+  font-size: 14px;
+  color: rgb(145, 145, 145);
+  margin: 20px auto;
+  line-height: 20px;
+}
+
+/*********F O O T E R***********/
+
+footer img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+footer .footerText{
+  text-align: center;
+  margin: 100px auto 50px auto;
+}
+footer .footerText h1{
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+footer .footerText p{
+  color: rgb(145, 145, 145);
+  letter-spacing: 3px;
+}
+footer .Message{
+  width: 400px;
+  margin-left: 100px;
+  padding: 80px 40px;
+  box-shadow: 3px 3px 20px 20px rgb(233, 229, 229);
+}
+footer .Message h1{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.Message input{
+  height: 20px;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid rgb(172, 171, 171);
+  margin-bottom: 15px;
+  border-radius:5px;
+  color: black;
+}
+.Message textarea{
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid rgb(172, 171, 171);
+  margin-bottom: 20px;
+  border-radius:5px;
+  color: black;
+  resize: none;
+}
+.Message button{
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  background: red;
+  padding: 10px 20px;
+  border: 0px solid white;
+  outline: 0px solid red;
+  cursor: pointer;
+  border-radius:5px;
+}
+
+#copyright{
+  border-top: 1px solid rgb(226, 222, 222);
+  font-size: 14px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+#copyright p{
+  color: rgb(172, 171, 171);
+  margin: 15px auto;
+}
+#copyright a{
+  text-decoration: none;
+  font-weight: 600;
+  color: rgba(255, 0, 0, 0.74);
+}
+
+
+@media (max-width: 700px){
+  body{
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+  }
+  header{
+    width: 700px;
+    padding: 10px 20px;
+    margin:0px;
+    z-index: 1;
+    display: flex;
+    background-color: rgba(66, 6, 122, 0.555);
+    opacity: 0.5;
+  }
+  header .logo{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  header .navigation {
+    display: none;
+    margin: 0px;
+  }
+  .banner .content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .banner .content p {
+    color: rgb(202, 200, 200);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 20px 0px;
+  }
+
+  .banner .content button {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background: rgb(221, 16, 78);
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+
+  #about {
+    padding: 100px 20px;
+    border-bottom: 2px solid rgb(209, 208, 208);
+  }
+
+  .about-us {
+     justify-content: space-between;
+     text-align: center;
+     display: inline-block;
+  }
+
+  .aboutText h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }
+
+  .aboutText p {
+    font-size: 16px;
+    text-align: justify;
+    margin: auto 20px;
+    color: rgb(61, 60, 60);
+    text-indent: 25px;
+    line-height: 20px;
+  }
+ .about-us .image{
+   margin-top: 20px;
+ }
+ #menu{
+   border-bottom: 2px solid rgb(209, 208, 208);
+ }
+ .ourMenu {
+   position: relative;
+   padding: 100px auto;
+   text-align: center;
+ }
+ .MenuImages{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+ }
+ #Expert{
+   padding: 100px 20px;
+ }
+ .Experts{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ .ExpertsPhoto{
+   margin: 0px 40px 40px 0px;
+ }
+
+ #comment{
+   padding: 100px 30px;
+ }
+ .CommentText  h1{
+   font-size: 50px;
+ }
+
+ .Clients{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   position: relative;
+ }
+ .client{
+   position: relative;
+   margin-bottom: 10px;
+   margin-right: 10px;
+   padding: 10px;
+   width: 260px;
+ }
+
+ footer img{
+  display: none;
+ }
+
+}
